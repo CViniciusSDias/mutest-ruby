@@ -15,5 +15,12 @@ RSpec.describe CalculadoraDeImpostos do
     imposto = calculadora.calcula(produto);
     expect(imposto).to eql 0
   end
+
+  it "calcula imposto de produto de 500 reais" do
+    produto = Produto.new(500);
+    calculadora = CalculadoraDeImpostos.new
+    imposto = calculadora.calcula(produto);
+    expect(imposto).to eql 0
+  end
 end
 
