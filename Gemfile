@@ -8,4 +8,6 @@ end
 gem 'rspec'
 gem 'mutest'
 gem 'mutest-rspec'
+gem 'simplecov', require: false, group: :test
+
 
